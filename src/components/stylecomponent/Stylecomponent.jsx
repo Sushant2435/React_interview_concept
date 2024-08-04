@@ -20,7 +20,6 @@ export default Stylecompnent;
 const DivContainer = styled.div`
     color: red;
     font-size: 1.5em;
-
     p{
     color:blue;
     border:2px solid black;
