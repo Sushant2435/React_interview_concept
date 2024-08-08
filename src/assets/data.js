@@ -3,7 +3,7 @@ const fruits = [
     { name: "Banana" },
     { name: "Cherry" },
     { name: "Date" },
-    { name: "Elderberry" },
+    { name: "New Fruit" },
     { name: "Fig" },
     { name: "Grape" },
     { name: "Honeydew" }

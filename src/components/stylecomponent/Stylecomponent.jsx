@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Stylecompnent = () => {
     return (
         <>
-            <DivContainer>
+            <DivContainer className="text-center my-4">
                 <h1>Style Component</h1>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non, quibusdam!</p>
             </DivContainer>
@@ -18,11 +18,17 @@ const Stylecompnent = () => {
 export default Stylecompnent;
 
 const DivContainer = styled.div`
-    color: red;
-    font-size: 1.5em;
+    border:2px solid white;
+    h1{
+     color: black;
+    font-weight:bold;
+    font-size: 1.4em;
+    }
+
     p{
     color:blue;
     border:2px solid black;
+    display: inline;
     }
     
 `;

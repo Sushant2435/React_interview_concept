@@ -5,13 +5,17 @@ import React, { PureComponent } from "react";
 class Purecomponent extends PureComponent {
     render() {
         return (
-            <h1>Hello {this.props.name}</h1>
+            <div className=" text-center">
+                <div className="text-center text-2xl font-bold my-5">Pure Component</div>
+                <h1>Hello {this.props.name}</h1>
+            </div>
+
         )
     }
 }
 
 const Purecomponent1 = () => {
-    const name = "Sushant";
+    const name = "Sushant Sharma";
 
     return (
         <div>

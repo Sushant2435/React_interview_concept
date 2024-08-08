@@ -15,11 +15,16 @@ class ParentComponent extends Component {
 
     render() {
         return (
-            <div>
-                <p>{this.state.count}</p>
-                <button onClick={this.increment}>Increment</button>
-                <MyPureComponent name={this.state.name} />
-                <button onClick={this.updateName}>updateName</button>
+            <div className="flex justify-center mt-5 gap-4">
+                <div>
+                    <p className="text-center">{this.state.count}</p>
+                    <button className="bg-blue-300 px-4 py-2 rounded-full" onClick={this.increment}>Increment</button>
+                </div>
+                <div>
+                    <MyPureComponent name={this.state.name} />
+                    <button className="bg-blue-300 px-4 py-2 rounded-full" onClick={this.updateName}>updateName</button>
+                </div>
+
             </div>
         )
     }
@@ -27,7 +32,7 @@ class ParentComponent extends Component {
 class MyPureComponent extends PureComponent {
     render() {
         return (
-            <div>
+            <div className="text-center">
                 <h1>{this.props.name}</h1>
             </div>
         )
