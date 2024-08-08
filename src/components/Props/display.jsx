@@ -7,10 +7,9 @@ const Display = () => {
         <>
             <h1 className='text-center font-bold text-2xl my-4'>Props in React</h1>
             <div className='flex justify-between flex-wrap'>
-                {fruits.map((fruitName, index) => ( 
+                {fruits.map((fruitName, index) => (
                     <Card key={index} fruit={fruitName} index={index} />
                 ))}
-
             </div>
         </>
 

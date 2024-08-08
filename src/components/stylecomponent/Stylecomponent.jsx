@@ -14,7 +14,6 @@ const Stylecompnent = () => {
         </>
     )
 }
-
 export default Stylecompnent;
 
 const DivContainer = styled.div`

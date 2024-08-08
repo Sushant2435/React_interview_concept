@@ -9,7 +9,6 @@ const Card = ({ fruit, index }) => {
         </div>
     )
 }
-
 // The PropTypes.shape is used when you need to validate an object prop with a specific shape. In your Card component, the fruit prop is expected to be an object with a name property that is a string. By using PropTypes.shape, you can specify the shape of the fruit object.
 // Card.propTypes = {
 //     fruit: propTypes.shape({
