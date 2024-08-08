@@ -1,3 +1,4 @@
+// Hooks: Hooks are special functions that allow you to read and update values within a component.
 import React from 'react'
 import Counter from './Counter_useState'
 import UseState_checkbox from './UseState_checkbox'
@@ -10,12 +11,6 @@ const Hooks = () => {
                 <Counter />
                 <UseState_checkbox />
             </div>
-            <h1 className='py-10 text-2xl font-bold'>2. useEffect Hooks</h1>
-            <div className='flex flex-wrap gap-4'>
-                <Counter />
-                <UseState_checkbox />
-            </div>
-
         </div>
     )
 }

@@ -1,9 +1,7 @@
 //Hooks....................
 // Hooks are the special type of function that we use to read update values with in a component
 
-// 1.useState..............
-// useState will return an array with two values current value and a function so that means it will take two variable first one is taking current state value and 2nd one is a fucntion that we use to update state value
-
+// useState: useState returns an array with two elements: the current state value and a function to update that value. The first element is the current state, and the second is the function used to update it.
 import React, { useState } from 'react'
 
 export default function Counter() {
