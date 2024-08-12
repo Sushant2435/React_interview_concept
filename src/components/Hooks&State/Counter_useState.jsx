@@ -1,7 +1,10 @@
 //Hooks....................
 // Hooks are the special type of function that we use to read update values with in a component
 
-// useState: useState returns an array with two elements: the current state value and a function to update that value. The first element is the current state, and the second is the function used to update it.
+// useState: 1.useState returns an array with two elements: the current state value and a function to update that value. The first element is the current state, and the second is the function used to update it.
+// 2.use to manage of a component
+// 3.state are those varaible that have some signification on webpage that will change
+
 import React, { useState } from 'react'
 
 export default function Counter() {

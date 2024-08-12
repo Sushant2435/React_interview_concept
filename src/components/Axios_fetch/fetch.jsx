@@ -8,7 +8,6 @@ import React, { useState } from 'react'
 const Fetch = () => {
     const [data, setData] = useState([]);
     async function getData() {
-        console.log("hi")
         try {
             const result = await fetch('https://jsonplaceholder.typicode.com/todos/1')
             if (result.ok) {
