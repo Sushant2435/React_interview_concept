@@ -16,5 +16,4 @@ const Question_State = ({ ques, ans }) => {
         </div>
     )
 }
-
 export default Question_State
