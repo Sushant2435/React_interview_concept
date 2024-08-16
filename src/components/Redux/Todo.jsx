@@ -8,7 +8,6 @@ const Todo = () => {
     const dispatch = useDispatch();
     const Todo = useSelector((state) => state.Todo);
     const { todos } = Todo;
-
     useEffect(() => {
         const savedTodos = JSON.parse(localStorage.getItem('todos')) || [];
         if (savedTodos.length > 0) {
@@ -54,18 +53,16 @@ const Todo = () => {
                 </button>
             </form>
             <div className='text-center mt-5'>
-                {todos ? todos.map((item) => (
-                    <ol key={item.id} className='list-decimal bg-yellow-100 rounded-lg mt-2 px-8 py-4 font-semibold w-1/3 m-auto'>
+                {todos ? todos.map((item, index) => (
+                    <ol key={item.id} className=' bg-yellow-100 rounded-lg mt-2 px-3 py-4 font-semibold w-1/3 m-auto'>
                         <li>
                             <div className='flex justify-between'>
-                                <span>{item.todo}</span>
+                                <span>{index + 1}. {item.todo}</span>
                                 <div>
                                     <button onClick={() => deleteTodo(item)} className='text-white px-4 rounded-full ml-4 bg-red-300'>Delete</button>
                                     <button onClick={() => startUpdateTodo(item)} className='text-white px-4 rounded-full ml-4 bg-green-300'>Update</button>
                                 </div>
-
                             </div>
-
                         </li>
                     </ol>
                 )) : ""}
