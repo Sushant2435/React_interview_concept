@@ -14,7 +14,6 @@ const Todo = () => {
             savedTodos.forEach(todo => dispatch(AddTodoAction(todo.todo)));
         }
     }, [dispatch]);
-
     const handleSubmit = (e) => {
         e.preventDefault();
         if (editTodo) {
@@ -25,16 +24,13 @@ const Todo = () => {
         }
         setTodo('');
     };
-
     const deleteTodo = (todo) => {
         dispatch(RemoveTodoAction(todo));
-    };
-
+    }
     const startUpdateTodo = (item) => {
         setEditTodo(item);
         setTodo(item.todo);
     };
-
     return (
         <>
             <h1 className='text-3xl font-bold text-center'>Todo list using React Redux Toolkit</h1>
