@@ -13,7 +13,6 @@ const Fetch = () => {
             if (result.ok) {
                 const data = await result.json();
                 setData(data)
-                console.log(data)
             }
         } catch (err) {
             console.log(err)

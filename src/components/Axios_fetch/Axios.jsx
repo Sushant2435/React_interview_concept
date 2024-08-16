@@ -22,19 +22,17 @@ const Axios = () => {
     return (
         <>
             {loading ? (
-                <div>Loading....</div>
+                <div className='bg-blue-400 rounded-full px-4 py-2 animate-bounce'>Loading....</div>
             ) : error ? (
-                <div>There is something went wrong</div>
+                <div className='bg-red-300 rounded-full px-4 py-2 animate-pulse text-white'>There is something went wrong</div>
             ) : (
-                <>
-                    <div className='flex flex-wrap justify-between px-6 py-5'>
-                        {
-                            products.map((product, index) => (
-                                <ProductCard product={product} key={index} />
-                            ))
-                        }
-                    </div>
-                </>
+                <div className='flex flex-wrap justify-between px-6 py-5'>
+                    {
+                        products.map((product, index) => (
+                            <ProductCard product={product} key={index} />
+                        ))
+                    }
+                </div>
             )
             }
         </>
