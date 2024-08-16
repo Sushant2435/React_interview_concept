@@ -4,17 +4,17 @@ export const TodoReducer = (state = { todos: [] }, action) => {
     switch (action.type) {
         case "ADD_TODO":
             updatedTodos = action.payload;
-            localStorage.setItem('todos', JSON.stringify(updatedTodos)); // Save updated todos to localStorage
+            localStorage.setItem('todos', JSON.stringify(updatedTodos));
             return { todos: updatedTodos };
 
         case "REMOVE_TODO":
             updatedTodos = action.payload;
-            localStorage.setItem('todos', JSON.stringify(updatedTodos)); // Save updated todos to localStorage
+            localStorage.setItem('todos', JSON.stringify(updatedTodos));
             return { todos: updatedTodos };
 
         case "UPDATE_TODO":
             updatedTodos = action.payload;
-            localStorage.setItem('todos', JSON.stringify(updatedTodos)); // Save updated todos to localStorage
+            localStorage.setItem('todos', JSON.stringify(updatedTodos));
             return { todos: updatedTodos };
 
         default:
