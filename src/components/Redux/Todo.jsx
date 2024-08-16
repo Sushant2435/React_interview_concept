@@ -11,7 +11,6 @@ const Todo = () => {
     useEffect(() => {
         const savedTodos = JSON.parse(localStorage.getItem('todos')) || [];
         if (savedTodos.length > 0) {
-            // Dispatch an action to load these todos into the Redux store
             savedTodos.forEach(todo => dispatch(AddTodoAction(todo.todo)));
         }
     }, [dispatch]);
