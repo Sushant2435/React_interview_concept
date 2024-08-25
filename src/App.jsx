@@ -1,17 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import FunctionComponent from './components/componentTypes/FunctionCompnent'
-import Navbar from './components/rounting/Navbar'
-import About from './pages/About'
-import Home from './pages/Home'
-import ALLCrud from './pages/ALLCrud'
-import Footer from './pages/Footer'
-import Description from './pages/Description'
-import Hooks from './pages/Hooks'
-import InterviewCom from './pages/InterviewCom'
-import Redux from './pages/Redux'
-import AboutReact from './pages/About-react'
-import LoginForm from './components/FormValidation/LoginForm'
+import { FunctionComponent, Navbar, About, AboutReact, ALLCrud, Footer, Home, Description, InterviewCom, Redux, Hooks, LoginForm } from './pages/ApplicationRoute'
+
 function App() {
   return (
     <div className='overflow-hidden'>
@@ -29,7 +19,6 @@ function App() {
           <Route path="/Components" element={<FunctionComponent />} />
           <Route path="/form" element={<LoginForm />} />
         </Routes>
-
         <Footer />
       </BrowserRouter>
 
