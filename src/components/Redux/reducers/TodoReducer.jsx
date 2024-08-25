@@ -6,7 +6,6 @@ export const TodoReducer = (state = { todos: [] }, action) => {
             updatedTodos = action.payload;
             localStorage.setItem('todos', JSON.stringify(updatedTodos));
             return { todos: updatedTodos };
-
         case "REMOVE_TODO":
             updatedTodos = action.payload;
             localStorage.setItem('todos', JSON.stringify(updatedTodos));

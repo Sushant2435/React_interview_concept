@@ -1,13 +1,12 @@
-import { FaRegStar } from "react-icons/fa";
-import { FaStarHalfAlt } from "react-icons/fa";
-import { FaStar } from "react-icons/fa";
+import { FaRegStar, FaStar, FaStarHalfAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const ProductCard = ({ product }) => {
-    const { image, title, price, category, rating, description } = product;
+    const { id, image, title, price, category, rating, description } = product;
     const descriptionWords = description.split(' ');
     const truncatedDescription = descriptionWords.slice(0, 10).join(' ');
     return (
-        <div className='bg-orange-100 w-[300px] h-auto m-4 rounded-2xl shadow-xl pb-4'>
+        <Link to={`/product/${id}`} className='bg-orange-100 w-[300px] h-auto m-4 rounded-2xl shadow-xl pb-4'>
             <img src={image} alt="product image" className='h-[250px] w-full object-fill rounded-t-2xl' />
             <div className='px-3'>
                 <div className='text-gray-500 uppercase text-xl mt-2 font-semibold'>{category}</div>
@@ -41,7 +40,7 @@ const ProductCard = ({ product }) => {
                     })}
                 </div>
             </div>
-        </div >
+        </Link >
 
     )
 }

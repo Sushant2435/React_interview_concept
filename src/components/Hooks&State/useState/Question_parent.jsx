@@ -12,5 +12,4 @@ const Question_parent = () => {
         </div>
     )
 }
-
 export default Question_parent

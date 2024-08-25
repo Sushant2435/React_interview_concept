@@ -3,7 +3,6 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 import { thunk } from 'redux-thunk'
 import { TodoReducer } from './reducers/TodoReducer';
 const reducer = combineReducers({
-    //this contains all the stores
     Todo: TodoReducer,
 })
 

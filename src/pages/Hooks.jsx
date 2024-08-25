@@ -1,11 +1,14 @@
 // Hooks: Hooks are special functions that allow you to read and update values within a component.
 import React from 'react'
-import Counter from './useState/Counter_useState'
-import UseState_checkbox from './useState/UseState_checkbox'
-import Axios from '../Axios_fetch/Axios'
-import Question_parent from './useState/Question_parent'
-import TitleIncrement from './useEffect/TitleIncrement'
-import CounterUseReducer from './useReducerHook/CounterUseReducer'
+import Products from '../components/Hooks&State/useReducerHook/Products'
+import Counter from '../components/Hooks&State/useState/Counter_useState'
+import UseState_checkbox from '../components/Hooks&State/useState/UseState_checkbox'
+import TitleIncrement from '../components/Hooks&State/useEffect/TitleIncrement'
+import CounterUseReducer from '../components/Hooks&State/useReducerHook/CounterUseReducer'
+import UseMemo from '../components/Hooks&State/useMemo/UseMemo'
+import Question_parent from '../components/Hooks&State/useState/Question_parent'
+import Axios from '../components/Axios_fetch/Axios'
+
 const Hooks = () => {
     return (
         <>
@@ -15,6 +18,7 @@ const Hooks = () => {
                 <li className='text-red-200 pb-3 text-lg'>It returns a stateful value and a function to
                     update it.
                 </li>
+                <Products />
                 <h1 className='pb-10  text-2xl font-bold'>1. useState Hook</h1>
                 <div className='flex flex-wrap gap-4'>
                     <Counter />
@@ -31,7 +35,8 @@ const Hooks = () => {
                 <div className='flex flex-wrap gap-4'>
                     <TitleIncrement />
                 </div>
-                <h1 className='pt-10 pb-3  text-2xl font-bold'>3.1 useReducer Hook</h1>
+
+                <h1 className='pt-10 pb-3 text-2xl font-bold'>3.1 useReducer Hook</h1>
                 <li className='text-red-200 text-lg'>A more powerful alternative to useState
                     for managing complex state logic
                     in components. </li>
@@ -41,12 +46,16 @@ const Hooks = () => {
                 <div className='flex flex-wrap gap-4'>
                     <CounterUseReducer />
                 </div>
+                <h1 className='pt-10 pb-3 text-2xl font-bold'>4.1 useMemo Hook</h1>
+                <div className='flex flex-wrap gap-4'>
+                    <UseMemo />
+                </div>
             </div>
             <div className='bg-gray-300'>
                 <h1 className=' text-2xl font-bold text-center pt-6'>2.2 useState Hook</h1>
                 <Question_parent />
             </div>
-            <div className='flex flex-col bg-blue-100 '>
+            <div className='flex flex-col bg-blue-100'>
                 <h1 className='text-3xl font-bold text-center py-2'>2.2 useEffect Hook with Axios and Fetch</h1>
                 <li className='text-black text-lg text-center'>Fetch and Axios both are promise based based https client</li>
                 <li className='text-black text-lg text-center'>fetch is inbuilt webapi method present in most of the modern browsers where as axios is a third party library is built on top of XMLHttpRequest object.</li>

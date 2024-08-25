@@ -1,13 +1,14 @@
-const fruits = [
-    { name: "Apple" },
-    { name: "Banana" },
-    { name: "Cherry" },
-    { name: "Date" },
-    { name: "New Fruit" },
-    { name: "Fig" },
-    { name: "Grape" },
-    { name: "Honeydew" }
-]
+const ReactArray = [
+    { name: "ABOUT REACT", path: "about-react", id: 1 },
+    { name: "COMPONENTS", path: "components", id: 2 },
+    { name: "PROPS", path: "props", id: 3 },
+    { name: "HOOks AND STATE", path: "hooks", id: 4 },
+    { name: "INTERVIEW CONCEPT", path: "interview-concept", id: 5 },
+    { name: "CRUD Operation", path: "crud-operation", id: 6 },
+    { name: "Redux", path: "redux", id: 7 },
+    { name: "Form", path: "form", id: 8 }
+];
+
 export const questions = [
     {
         ques: "What is react?",
@@ -35,4 +36,12 @@ export const questions = [
     },
 ]
 
-export default fruits;
+export const NavbarItem = [
+    { id: 1, name: 'Courses', path: 'courses' },
+    { id: 2, name: 'Blog', path: 'blog' },
+    { id: 3, name: 'Interview', path: 'interview' },
+    { id: 4, name: 'Community', path: 'community' },
+    { id: 5, name: 'About', path: 'about' },
+];
+
+export default ReactArray;

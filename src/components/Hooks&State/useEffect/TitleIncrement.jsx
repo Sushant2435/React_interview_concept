@@ -15,5 +15,4 @@ const TitleIncrement = () => {
         </div>
     )
 }
-
 export default TitleIncrement

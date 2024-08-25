@@ -43,7 +43,7 @@ const Todo = () => {
                     placeholder='Enter todo item'
                     onChange={(e) => setTodo(e.target.value)}
                 />
-                <button className='bg-pink-200 px-8 py-2 font-semibold rounded-lg cursor-pointer'>
+                <button className='bg-pink-400 px-8 py-2 font-semibold rounded-lg cursor-pointer'>
                     {editTodo ? 'Update Todo' : 'Add Todo'}
                 </button>
             </form>
