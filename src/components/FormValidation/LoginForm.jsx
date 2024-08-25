@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 const LoginForm = () => {
     const [formdata, setFormData] = useState({
@@ -13,13 +13,13 @@ const LoginForm = () => {
         const { name, value } = e.target;
         setFormData({ ...formdata, [name]: value })
     }
-    useEffect(() => {
-        console.log(formErrors)
-        if (Object.keys(formErrors).length === 0 && isSubmit) {
-            console.log('Form data submitted:', formdata);
-            // You can make an API call here or handle successful form submission
-        }
-    }, [formErrors])
+    // useEffect(() => {
+    //     console.log(formErrors)
+    //     if (Object.keys(formErrors).length === 0 && isSubmit) {
+    //         console.log('Form data submitted:', formdata);
+    //         // You can make an API call here or handle successful form submission
+    //     }
+    // }, [formErrors])
     const handleSubmit = (e) => {
         e.preventDefault();
         setFormErrors(validateForm(formdata))
