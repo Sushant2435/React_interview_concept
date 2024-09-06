@@ -56,7 +56,6 @@ const LoginForm = () => {
             ) : (
                 <div className='bg-red-200 text-black font-bold mb-2 rounded-2xl p-2'><pre>{JSON.stringify(formdata, null, 2)}</pre></div>
             )}
-
             <div className='h-auto w-1/3 bg-yellow-100 px-10 py-10 rounded-3xl shadow-xl'>
                 <h1 className='font-bold text-3xl pb-5 text-center'>Login Form</h1>
                 <form action="" className='flex flex-col gap-2' onSubmit={handleSubmit}>

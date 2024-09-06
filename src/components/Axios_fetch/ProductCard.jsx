@@ -2,6 +2,7 @@ import { FaRegStar, FaStar, FaStarHalfAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const ProductCard = ({ product }) => {
+    // console.log(product)
     const { id, image, title, price, category, rating, description } = product;
     const descriptionWords = description.split(' ');
     const truncatedDescription = descriptionWords.slice(0, 10).join(' ');

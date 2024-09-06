@@ -1,0 +1,8 @@
+there is three stage in react life cycle 
+mount - when you initially load something
+update - when you need to update something
+unmount - if you remove a component 
+
+componentDidMount
+componentDidUpdate
+componentWillunmount

@@ -19,6 +19,8 @@ const Axios = () => {
             })
     }, [])
 
+    console.log(products);
+
     return (
         <>
             {loading ? (

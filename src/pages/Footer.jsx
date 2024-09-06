@@ -16,10 +16,10 @@ const Footer = () => {
                             <h2 className="mb-6 text-sm font-semibold  uppercase dark:text-white">Resources</h2>
                             <ul className=" font-medium">
                                 <li className="mb-4">
-                                    <a href="https://flowbite.com/" className="hover:underline">SubhYatra</a>
+                                    <a href="https://yatrasubh.netlify.app/" className="hover:underline">SubhYatra</a>
                                 </li>
                                 <li>
-                                    <a href="https://tailwindcss.com/" className="hover:underline">Github</a>
+                                    <a href="https://github.com/" className="hover:underline">Github</a>
                                 </li>
                             </ul>
                         </div>
@@ -27,10 +27,10 @@ const Footer = () => {
                             <h2 className="mb-6 text-sm font-semibold  uppercase dark:text-white">Follow us</h2>
                             <ul className=" font-medium">
                                 <li className="mb-4">
-                                    <a href="https://github.com/themesberg/flowbite" className="hover:underline ">Github</a>
+                                    <a href="https://github.com/" className="hover:underline ">Github</a>
                                 </li>
                                 <li>
-                                    <a href="https://discord.gg/4eeurUVvTy" className="hover:underline">Linkdin</a>
+                                    <a href="https://linkedin.com/" className="hover:underline">Linkdin</a>
                                 </li>
                             </ul>
                         </div>
@@ -38,10 +38,10 @@ const Footer = () => {
                             <h2 className="mb-6 text-sm font-semibold  uppercase">Legal</h2>
                             <ul className=" font-medium">
                                 <li className="mb-4">
-                                    <a href="#" className="hover:underline">Privacy Policy</a>
+                                    <a href="https://linkedin.com/" className="hover:underline">Privacy Policy</a>
                                 </li>
                                 <li>
-                                    <a href="#" className="hover:underline">Terms &amp; Conditions</a>
+                                    <a href="https://linkedin.com/" className="hover:underline">Terms &amp; Conditions</a>
                                 </li>
                             </ul>
                         </div>

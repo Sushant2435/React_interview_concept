@@ -1,6 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { FunctionComponent, Navbar, About, AboutReact, ALLCrud, Footer, Home, Description, InterviewCom, Redux, Hooks, LoginForm } from './pages/ApplicationRoute'
+import Login from './pages/Login'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/about-react" element={<AboutReact />} />
           <Route path="/hooks" element={<Hooks />} />
           <Route path="/crud-operation" element={<ALLCrud />} />
@@ -21,7 +23,6 @@ function App() {
         </Routes>
         <Footer />
       </BrowserRouter>
-
 
     </div >
   )
