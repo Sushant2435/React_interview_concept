@@ -6,8 +6,10 @@ const initialState = {
 }
 
 const todoSlice = createSlice({
-    name: "auth",
+    name: "todos",
     initialState: initialState,
     reducers: action,
 });
+export const { addTodo, removeTodo, updateTodo } = todoSlice.actions;
+
 export default todoSlice.reducer;

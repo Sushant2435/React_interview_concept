@@ -6,7 +6,8 @@ const ReactArray = [
     { name: "INTERVIEW CONCEPT", path: "interview-concept", id: 5 },
     { name: "CRUD Operation", path: "crud-operation", id: 6 },
     { name: "Redux", path: "redux", id: 7 },
-    { name: "Form", path: "form", id: 8 }
+    { name: "Form", path: "form", id: 8 },
+    { name: "Tic tac Game", path: "tic-tac-game", id: 9 }
 ];
 
 export const questions = [

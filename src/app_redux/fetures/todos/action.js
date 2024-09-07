@@ -1,5 +1,5 @@
 export default {
     addTodo: () => { },
     removeTodo: () => { },
-    deleteTodo: () => { },
+    updateTodo: () => { },
 }

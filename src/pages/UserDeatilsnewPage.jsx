@@ -1,17 +1,19 @@
-import React from 'react'
+import React from 'react';
+import { useDispatch, useSelector } from 'react-redux'; // Import hooks from react-redux
+import { setuserInfo } from '../app_redux/fetures/userform/userFormSlice';
 
-import { useDispatch } from 'react-redux'
-import { login } from '../app_redux/fetures/auth/authslice'
-
-
-const Login = () => {
+const UserDeatilsnewPage = () => {
     const dispatch = useDispatch();
     const handleSubmit = (event) => {
         event.preventDefault();
         const formData = new FormData(event.target);
         const Formdata = Object.fromEntries(formData.entries());
-        dispatch(login(Formdata))
-    }
+        dispatch(setuserInfo(Formdata));
+    };
+    const user = useSelector((state) => state.user.userInfo)
+    console.log(user)
+
+
     return (
         <div>
             <div>
@@ -28,8 +30,13 @@ const Login = () => {
                 </fieldset>
                 <button className='p-2 bg-green-400 rounded-lg' type="submit">Login</button>
             </form>
+            <div className='text-center bg-blue-300 flex flex-col m-auto w-1/4 my-10 rounded-2xl'>
+                <h2 className='font-bold text-2xl'>User details</h2>
+                <p>UserName : {user.username}</p>
+                <p>Password : {user.password}</p>
+            </div>
         </div>
-    )
-}
+    );
+};
 
-export default Login;
+export default UserDeatilsnewPage;

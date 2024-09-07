@@ -8,9 +8,7 @@
 
 // Typical Use Cases: Memoization is useful for computationally expensive calculations or preventing unnecessary re-renders of components.
 
-import { useMemo, useState } from "react"
-
-import React from 'react'
+import React, { useMemo, useState } from "react"
 
 const Factorial = ({ number }) => {
     const calculateFactorial = (n) => {
